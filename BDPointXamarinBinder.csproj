@@ -16,7 +16,7 @@
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
     <AndroidClassParser>class-parse</AndroidClassParser>
     <PackageId>Bluedot.PointSDK.Android</PackageId>
-    <PackageVersion>15.1.0</PackageVersion>
+    <PackageVersion>15.1.1</PackageVersion>
     <Authors>Bluedot</Authors>
     <Copyright>Bluedot</Copyright>
     <PackageIconUrl>https://docs.bluedot.io/wp-content/uploads/2018/09/Bluedot_Location_dot.png</PackageIconUrl>
@@ -113,10 +113,10 @@
       <HintPath>packages\Xamarin.Google.Guava.ListenableFuture.1.0.0.2\lib\monoandroid50\Xamarin.Google.Guava.ListenableFuture.dll</HintPath>
     </Reference>
     <Reference Include="Square.OkIO">
-      <HintPath>packages\Square.OkIO.1.13.0\lib\MonoAndroid\Square.OkIO.dll</HintPath>
+      <HintPath>packages\Square.OkIO.2.2.2\lib\monoandroid90\Square.OkIO.dll</HintPath>
     </Reference>
     <Reference Include="Square.OkHttp3">
-      <HintPath>packages\Square.OkHttp3.3.8.0\lib\MonoAndroid\Square.OkHttp3.dll</HintPath>
+      <HintPath>packages\Square.OkHttp3.4.2.2\lib\monoandroid90\Square.OkHttp3.dll</HintPath>
     </Reference>
     <Reference Include="Square.Retrofit2">
       <HintPath>packages\Square.Retrofit2.2.4.0.1\lib\monoandroid44\Square.Retrofit2.dll</HintPath>
