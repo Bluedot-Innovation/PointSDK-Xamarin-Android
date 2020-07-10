@@ -16,10 +16,10 @@
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
     <AndroidClassParser>class-parse</AndroidClassParser>
     <PackageId>Bluedot.PointSDK.Android</PackageId>
-    <PackageVersion>15.1.1</PackageVersion>
+    <PackageVersion>15.2.0</PackageVersion>
     <Authors>Bluedot</Authors>
     <Copyright>Bluedot</Copyright>
-    <PackageIconUrl>https://docs.bluedot.io/wp-content/uploads/2018/09/Bluedot_Location_dot.png</PackageIconUrl>
+    <PackageIconUrl>https://bluedot.io/wp-content/uploads/2020/04/logo_lg.png</PackageIconUrl>
     <PackageLicenseUrl>https://bluedot.io/agreements/</PackageLicenseUrl>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <Owners>Bluedot</Owners>
@@ -118,9 +118,6 @@
     <Reference Include="Square.OkHttp3">
       <HintPath>packages\Square.OkHttp3.4.2.2\lib\monoandroid90\Square.OkHttp3.dll</HintPath>
     </Reference>
-    <Reference Include="Square.Retrofit2">
-      <HintPath>packages\Square.Retrofit2.2.4.0.1\lib\monoandroid44\Square.Retrofit2.dll</HintPath>
-    </Reference>
     <Reference Include="Xamarin.Jetbrains.Annotations">
       <HintPath>packages\Xamarin.Jetbrains.Annotations.13.0.0.1\lib\monoandroid90\Xamarin.Jetbrains.Annotations.dll</HintPath>
     </Reference>
@@ -178,6 +175,7 @@
     <EmbeddedReferenceJar Include="Jars\moshi-adapters-1.9.2.jar" />
     <EmbeddedReferenceJar Include="Jars\lifecycle-common-java8-2.2.0.jar" />
     <EmbeddedReferenceJar Include="Jars\converter-moshi-2.7.1.jar" />
+    <EmbeddedReferenceJar Include="Jars\retrofit-2.7.1.jar" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <Import Project="packages\Xamarin.Android.Support.Annotations.26.0.2\build\MonoAndroid80\Xamarin.Android.Support.Annotations.targets" Condition="Exists('packages\Xamarin.Android.Support.Annotations.26.0.2\build\MonoAndroid80\Xamarin.Android.Support.Annotations.targets')" />
