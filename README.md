@@ -1,4 +1,4 @@
-# Bluedot Android PointSDK xamarin wrapper
+# Bluedot Android PointSDK Xamarin wrapper
 This repository contains a project to make a C# wrapper for Bluedot Android PointSDK.
 
 ## Building
@@ -10,7 +10,7 @@ This repository contains a project to make a C# wrapper for Bluedot Android Poin
 3. Build the project with `release` configuration. It will produce `Bluedot.PointSDK.Android.X.Y.Z.nupkg` in `PointSDK-Xamarin-Android/bin/Release/`.
 
 ## Validating
-There is a Integration sample at `git@github.com:Bluedot-Innovation/PointSDK-Xamarin-minimal-app-Android.git`. The clone is a primary source of any modifications.
+There is a Integration sample at https://github.com/Bluedot-Innovation/PointSDK-Xamarin-minimal-app-Android. To validate the Nuget package:
 
 1. Open `BDPointAndroidXamarinDemo.sln`
 
