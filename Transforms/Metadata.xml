@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <metadata>
 	<attr path="/api/package[@name='au.com.bluedot.point']/class[@name='BDAuthenticationError']/method[@name='getReason']" name="visibility">public</attr>
+	<attr path="/api/package[@name='au.com.bluedot.point.net.engine']/class[@name='ZoneInfo']/method[@name='getCustomData']" name="visibility">public</attr>
 	<add-node path="/api/package[@name='au.com.bluedot.point.model']">
 		<class abstract="false" deprecated="not deprecated" final="false" name="RealLocationDetailsJsonAdapter" static="true" visibility="public" extends="java.lang.Object" />
 	</add-node>
