@@ -3,7 +3,7 @@ This repository contains a project to make a C# wrapper for Bluedot Android Poin
 
 ## Building
 
-1. Download the latest Android Point SDK AAR Jar file from https://github.com/Bluedot-Innovation/PointSDK-Xamarin-Android/blob/master/Jars/pointsdk-release.aar, and overwrite the previous version of Android SDK in the `Jars` folder.
+1. Download the latest Android Point SDK AAR file from artifacts released from Gitlab PointSDK repository https://gitlab.com/bluedotio/android/point_sdk_android, and overwrite the previous version of Android SDK in the `Jars` folder.
 
 2. Open solution, then open project **Options -> NuGet Package -> Metadata** and update version.
 
@@ -21,3 +21,5 @@ There is a Integration sample at https://github.com/Bluedot-Innovation/PointSDK-
 4. Select desired version of **Bluedot.PointSDK.Android ** and press **Add Package**
 
 5. Build and run the project.
+
+Note: If SDK is not refreshed in Minimal App, Test after renaming the Package name `Bluedot.PointSDK.Android.X.Y.Z.nupkg` to `Bluedot.PointSDK12.Android.X.Y.Z.nupkg` and include this in Min App
