@@ -17,7 +17,7 @@
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
     <AndroidClassParser>class-parse</AndroidClassParser>
     <PackageId>Bluedot.PointSDK.Android</PackageId>
-    <PackageVersion>15.5.1.2-alpha</PackageVersion>
+    <PackageVersion>15.5.1</PackageVersion>
     <Authors>Bluedot</Authors>
     <Copyright>Bluedot</Copyright>
     <PackageIconUrl>https://bluedot.io/wp-content/uploads/2020/04/logo_lg.png</PackageIconUrl>
