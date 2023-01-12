@@ -23,3 +23,13 @@ There is a Integration sample at https://github.com/Bluedot-Innovation/PointSDK-
 5. Build and run the project.
 
 Note: If SDK is not refreshed in Minimal App, Test after renaming the Package name `Bluedot.PointSDK.Android.X.Y.Z.nupkg` to `Bluedot.PointSDK12.Android.X.Y.Z.nupkg` and include this in Min App
+
+## Releasing
+
+1. Open solution in Visual Studio
+
+2. Build the project with `release` configuration. It will produce `Bluedot.PointSDK.Android.X.Y.Z.nupkg` in `PointSDK-Xamarin-Android/bin/Release/`.
+
+3. Go to `https://www.nuget.org/packages/Bluedot.PointSDK.Android` and login to Bluedot account.
+
+4. Upload `Bluedot.PointSDK.Android.X.Y.Z.nupkg` from `PointSDK-Xamarin-Android/bin/Release/`
