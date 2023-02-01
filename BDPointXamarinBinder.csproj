@@ -17,7 +17,7 @@
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
     <AndroidClassParser>class-parse</AndroidClassParser>
     <PackageId>Bluedot.PointSDK.Android</PackageId>
-    <PackageVersion>15.5.1</PackageVersion>
+    <PackageVersion>15.5.2-beta-1</PackageVersion>
     <Authors>Bluedot</Authors>
     <Copyright>Bluedot</Copyright>
     <PackageIconUrl>https://bluedot.io/wp-content/uploads/2020/04/logo_lg.png</PackageIconUrl>
@@ -250,7 +250,7 @@
     <Folder Include="Jars\" />
   </ItemGroup>
   <ItemGroup>
-    <LibraryProjectZip Include="Jars\point_sdk_android-15.5.1.aar" />
+    <LibraryProjectZip Include="Jars\point_sdk_android-15.5.2-beta-1.aar" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <Import Project="packages\Xamarin.Android.Support.Annotations.26.0.2\build\MonoAndroid80\Xamarin.Android.Support.Annotations.targets" Condition="Exists('packages\Xamarin.Android.Support.Annotations.26.0.2\build\MonoAndroid80\Xamarin.Android.Support.Annotations.targets')" />
