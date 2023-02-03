@@ -2,7 +2,19 @@
 <metadata>
 	<attr path="/api/package[@name='au.com.bluedot.point']/class[@name='BDAuthenticationError']/method[@name='getReason']" name="visibility">public</attr>
 	<attr path="/api/package[@name='au.com.bluedot.point.net.engine']/class[@name='ZoneInfo']/method[@name='getCustomData']" name="visibility">public</attr>
-	<add-node path="/api/package[@name='au.com.bluedot.point.model']">
-		<class abstract="false" deprecated="not deprecated" final="false" name="RealLocationDetailsJsonAdapter" static="true" visibility="public" extends="java.lang.Object" />
+
+	<!--Fix compiling issue CS0534: does not implement inherited abstract member 'JsonAdapter.ToJson(JsonWriter, Object) and 'JsonAdapter.FromJon(JsonObject)'-->
+	<attr path="/api/package[starts-with (@name, 'au.com.bluedot')]/class[contains(@name, 'JsonAdapter')]" name="extends">java.lang.Object</attr>
+
+	<!--Fix compiling issue CS0535: does not implement interface member 'IComparable.CompareTo(Object)'-->
+	<add-node path="/api/package[starts-with (@name, 'au.com.bluedot')]/class[@name='TimeOfDay' or @name='CalendarDate']">
+		<method name="compareTo" return="int" abstract="false" native="false" synchronized="false" static="false" final="false" deprecated="not deprecated" visibility="public">
+			<parameter name="p0" type="java.lang.Object" />
+		</method>
 	</add-node>
+	<!--Fix compiling issue CS0738: CreateFromParcel(Parcel) cannot implement 'IParcelableCreator.CreateFromParcel(Parcel?)' because it does not have the matching return type of 'Object'-->
+	<attr path="/api/package[starts-with (@name, 'au.com.bluedot.model.geo')]/class[contains(@name, 'Creator')]/method[@name='createFromParcel']" name="managedReturn">Java.Lang.Object</attr>
+
+	<!--Fix compiling issue CS0738: CreateFromParcel(Parcel) cannot implement 'IParcelableCreator.NewArray(int)' because it does not have the matching return type of 'Object'-->
+	<attr path="/api/package[starts-with (@name, 'au.com.bluedot.model.geo')]/class[contains(@name, 'Creator')]/method[@name='newArray']" name="managedReturn">Java.Lang.Object[]</attr>
 </metadata>
