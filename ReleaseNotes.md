@@ -1,3 +1,3 @@
-#Release Notes
+# Release Notes
 
-- Update Android Point SDK 15.5.2-retry-interval
+- Update Android Point SDK 15.5.2
