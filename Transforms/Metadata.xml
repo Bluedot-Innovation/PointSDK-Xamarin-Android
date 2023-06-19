@@ -12,9 +12,22 @@
 			<parameter name="p0" type="java.lang.Object" />
 		</method>
 	</add-node>
+	<add-node path="/api/package[starts-with (@name, 'au.com.bluedot')]/class[@name='CrossedFence']">
+		<method name="compareTo" return="int" abstract="false" native="false" synchronized="false" static="false" final="false" deprecated="not deprecated" visibility="public">
+			<parameter name="p0" type="java.lang.Object" />
+		</method>
+	</add-node>
+
+	<!--Fix compiling issue CS0535: TriggerEvent.TempoStopEvent does not implement interface member StopReason -->
+	<remove-node path="/api/package[starts-with (@name, 'au.com.bluedot.point.net.engine.event')]/class[contains(@name, 'TriggerEvent.TempoStopEvent')]"/>	
+
 	<!--Fix compiling issue CS0738: CreateFromParcel(Parcel) cannot implement 'IParcelableCreator.CreateFromParcel(Parcel?)' because it does not have the matching return type of 'Object'-->
 	<attr path="/api/package[starts-with (@name, 'au.com.bluedot.model.geo')]/class[contains(@name, 'Creator')]/method[@name='createFromParcel']" name="managedReturn">Java.Lang.Object</attr>
+	<attr path="/api/package[starts-with (@name, 'au.com.bluedot.point.net.engine')]/class[contains(@name, 'Creator')]/method[@name='createFromParcel']" name="managedReturn">Java.Lang.Object</attr>
+	<attr path="/api/package[starts-with (@name, 'au.com.bluedot.point.model')]/class[contains(@name, 'Creator')]/method[@name='createFromParcel']" name="managedReturn">Java.Lang.Object</attr>
 
 	<!--Fix compiling issue CS0738: CreateFromParcel(Parcel) cannot implement 'IParcelableCreator.NewArray(int)' because it does not have the matching return type of 'Object'-->
 	<attr path="/api/package[starts-with (@name, 'au.com.bluedot.model.geo')]/class[contains(@name, 'Creator')]/method[@name='newArray']" name="managedReturn">Java.Lang.Object[]</attr>
+	<attr path="/api/package[starts-with (@name, 'au.com.bluedot.point.net.engine')]/class[contains(@name, 'Creator')]/method[@name='newArray']" name="managedReturn">Java.Lang.Object[]</attr>
+	<attr path="/api/package[starts-with (@name, 'au.com.bluedot.point.model')]/class[contains(@name, 'Creator')]/method[@name='newArray']" name="managedReturn">Java.Lang.Object[]</attr>
 </metadata>
