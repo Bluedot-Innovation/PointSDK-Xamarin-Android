@@ -1,3 +1,3 @@
 # Release Notes
 
-- Update Android Point SDK 15.5.2
+- Update to Android Point SDK 16.0.0
